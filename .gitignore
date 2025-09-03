@@ -1,0 +1,7 @@
+/.fleet
+/.idea
+/.vscode
+/node_modules
+/coverage
+/dist
+npm-debug.log*
