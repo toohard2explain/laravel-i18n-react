@@ -14,7 +14,7 @@ interface ConfigInterface {
 /**
  *
  */
-export default function i18n(config?: ConfigInterface): PluginOption {
+ const i18n: (config?: ConfigInterface) => PluginOption = function i18n(config) {
   const langDirname = config?.langDirname ? config.langDirname : 'lang';
 
   const logger = createLogger('info', { prefix: '[laravel-i18n-react]' });
@@ -134,3 +134,5 @@ export default function i18n(config?: ConfigInterface): PluginOption {
     }
   };
 }
+
+export default i18n;
